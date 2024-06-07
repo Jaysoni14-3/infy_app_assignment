@@ -1,0 +1,117 @@
+.profile-details-container {
+  padding-bottom: 30px;
+}
+
+/* Top navbar */
+.profile-details-container .navigation-bar {
+  margin-top: 16px;
+  margin-inline: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-details-container .navigation-bar .back-icon,
+.profile-details-container .navigation-bar .search-icon {
+  background-color: var(--black-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-details-container .navigation-bar .search-icon {
+  visibility: hidden;
+}
+
+.profile-details-container .navigation-bar .page-header h2 {
+  color: var(--white-color);
+  font-size: 20px;
+  font-size: 700;
+}
+
+/* Profile details */
+.profile-details-container .details-container {
+  margin-top: 53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-details-container .details-container .profile-name {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-details-container .details-container .profile-name h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white-color);
+}
+
+.profile-details-container .details-container .profile-name p {
+  font-size: 20px;
+  color: var(--primary-blue-color);
+}
+
+.profile-details-container .details-container .profile-name p span {
+  font-size: 20px;
+  color: var(--primary-orange-color);
+}
+
+/* additional details */
+.profile-details-container .additional-details {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.profile-details-container .additional-details .input-field {
+  position: relative;
+  width: 295px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #111319;
+}
+
+.profile-details-container .additional-details .input-field input {
+  background-color: transparent;
+  color: var(--white-color);
+  height: 100%;
+  width: 85%;
+  border-radius: 25px;
+  border: 0;
+  outline: 0;
+  padding-left: 20px;
+}
+
+.profile-details-container .additional-details .input-field .edit-icon {
+  position: absolute;
+  right: 14px;
+  width: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* button */
+.profile-details-container .save-button button {
+  margin-top: 20px;
+  margin-inline: 40px;
+  width: 295px;
+  border-radius: 25px;
+  height: 50px;
+  background-color: var(--primary-blue-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+}

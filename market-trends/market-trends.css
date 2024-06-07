@@ -1,0 +1,119 @@
+/* Top navbar */
+.market-trends-container .navigation-bar {
+  margin-top: 16px;
+  margin-inline: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.market-trends-container .navigation-bar .back-icon,
+.market-trends-container .navigation-bar .search-icon {
+  background-color: var(--black-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.market-trends-container .navigation-bar .page-header h2 {
+  color: var(--white-color);
+  font-size: 20px;
+  font-size: 700;
+}
+
+.market-trends-container .search-bar {
+  position: relative;
+  margin-inline: 20px;
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+  background-color: var(--black-color);
+  height: 62.42px;
+  border-radius: 31px;
+}
+
+.market-trends-container .search-bar .search-icon {
+  padding-left: 15px;
+  padding-right: 13.47px;
+}
+
+.market-trends-container .search-bar .search-input {
+  background-color: var(--black-color);
+  border: 0;
+  outline: 0;
+  color: #b1afcd;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 31px;
+  border-bottom-right-radius: 31px;
+}
+
+.market-trends-container .search-bar .search-input::placeholder {
+  color: #b1afcd;
+}
+
+/* market trend cards */
+.market-trends-container .container-body {
+  margin-top: 20.58px;
+  padding-bottom: 120px;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.market-trends-container .container-body .market-card {
+  background-color: #1e2230;
+  display: flex;
+  border-radius: 10px;
+  padding: 12px 19.66px 11px 19.9px;
+}
+
+.market-trends-container .container-body .crypto-card-name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 16px;
+}
+
+.market-trends-container .container-body .crypto-card-name h2 {
+  color: var(--primary-blue-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.market-trends-container .container-body .crypto-card-name span {
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.market-trends-container .container-body .crypto-card-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.market-trends-container .container-body .crypto-card-price h2 {
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.market-trends-container .container-body .crypto-card-price span {
+  color: #ff73aa;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.market-trends-container
+  .container-body
+  .market-card.profit
+  .crypto-card-price
+  span {
+  color: #4de0d9;
+}

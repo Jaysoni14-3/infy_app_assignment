@@ -1,0 +1,301 @@
+.homepage {
+  background-color: #191c26;
+  background-color: var(--black-color);
+  padding-bottom: 60px;
+}
+
+/* Top navbar */
+.homepage .navigation-bar {
+  padding: 11px;
+  padding-inline: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage .navigation-bar .notifications-icon {
+  background-color: var(--black-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Welcome text */
+.homepage .welcome-text {
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-bottom: 23px;
+}
+
+.homepage .welcome-text h3 {
+  font-size: 20px;
+  color: var(--primary-blue-color);
+  font-weight: 500;
+}
+
+.homepage .welcome-text h2 {
+  font-size: 24px;
+  color: var(--white-color);
+}
+
+/* Homepage content */
+.homepage .homepage-content {
+  background-color: #191c26;
+  padding-top: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Wallet section */
+.homepage .wallet-balance-container {
+  display: flex;
+  gap: 15.5px;
+  padding-inline: 20px;
+  overflow: scroll;
+}
+
+.homepage .wallet-balance-container::-webkit-scrollbar {
+  /* Hides the scrollbar on wallet balance card horizontal scroll */
+  display: none;
+}
+
+.homepage .wallet-balance-card {
+  color: var(--white-color);
+  border-radius: 15px;
+  padding: 28px 32.5px 24px 22.5px;
+  min-width: 335px;
+  background-repeat: no-repeat;
+}
+
+/* adds new color to every ODD numbered card */
+.homepage .wallet-balance-card:nth-child(odd) {
+  background-image: url(../assets/images/card-background-1.png);
+}
+
+/* adds new color to every EVEN numbered card */
+.homepage .wallet-balance-card:nth-child(even) {
+  background-image: url(../assets/images/card-background-2.png);
+}
+
+.homepage .card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.homepage .flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.homepage .card-body {
+  margin-block: 13px;
+}
+
+.homepage .card-body p {
+  font-size: 28px;
+}
+
+.homepage .card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.homepage .card-footer .flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Portfolio-container */
+.portfolio-container {
+  margin-top: 21px;
+}
+
+.portfolio-container .container-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.portfolio-container .container-heading h2 {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.portfolio-container .container-heading a {
+  color: #363d4e;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.portfolio-container .container-body {
+  margin-top: 24px;
+  display: flex;
+  gap: 15px;
+  overflow: scroll;
+  padding-inline: 20px;
+}
+
+.portfolio-container .container-body::-webkit-scrollbar {
+  /* Hides the scrollbar on wallet balance card horizontal scroll */
+  display: none;
+}
+
+/* Individual crypto card */
+.portfolio-container .crypto-card {
+  min-width: 201px;
+  background-color: #1e2230;
+  border-radius: 15px;
+  padding: 25px 12px 15px 23px;
+}
+
+.portfolio-container .card-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-container .card-name p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a6a3b8;
+}
+
+.portfolio-container .card-name .pill {
+  background: linear-gradient(#8df3ed, #34d9d1);
+  border-radius: 12px;
+  padding: 5px 8px;
+}
+
+.portfolio-container .card-name .pill p {
+  color: #fcfcfd;
+}
+
+.portfolio-container .card-value {
+  margin-top: 8px;
+}
+
+.portfolio-container .card-value p {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white-color);
+}
+
+.portfolio-container .card-name-synonym {
+  margin-top: 4px;
+}
+
+.portfolio-container .card-name-synonym p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a6a3b8;
+}
+
+/* quick-buttons-container */
+.quick-buttons-container {
+  margin-top: 25.91px;
+  padding-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14.09px;
+}
+
+.single-button p {
+  font-size: 14px;
+  color: var(--white-color);
+}
+
+/* Market */
+.market-container {
+  margin-top: 24px;
+  padding-bottom: 30px;
+}
+
+.market-container .container-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.market-container .container-heading h2 {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.market-container .container-heading a {
+  color: #363d4e;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.market-container .container-body {
+  margin-top: 18px;
+  padding-bottom: 30px;
+  padding-inline: 20px;
+}
+
+.market-container .market-card {
+  background-color: #1e2230;
+  display: flex;
+  border-radius: 10px;
+  padding: 12px 19.66px 11px 19.9px;
+}
+
+.market-container .crypto-card-name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 16px;
+}
+
+.market-container .crypto-card-name h2 {
+  color: var(--primary-blue-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.market-container .crypto-card-name span {
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.market-container .crypto-card-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.market-container .crypto-card-price h2 {
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.market-container .crypto-card-price span {
+  color: #ff73aa;
+  font-size: 14px;
+  font-weight: 700;
+}
+

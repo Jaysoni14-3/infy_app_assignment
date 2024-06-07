@@ -1,0 +1,212 @@
+/* Top navbar */
+.settings-container .navigation-bar {
+  margin-top: 16px;
+  margin-inline: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-container .navigation-bar .back-icon,
+.settings-container .navigation-bar .search-icon {
+  background-color: var(--black-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-container .navigation-bar .search-icon {
+  visibility: hidden;
+}
+
+.settings-container .navigation-bar .page-header h2 {
+  color: var(--white-color);
+  font-size: 20px;
+  font-size: 700;
+}
+
+/* profile card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  background-color: #1e2230;
+  border-radius: 10px;
+  margin-inline: 20px;
+  margin-top: 20px;
+  padding: 15px 20px;
+}
+
+.profile-card .profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4;
+  margin-left: 14.76px;
+}
+
+.profile-card .profile-details p {
+  font-size: 18px;
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.profile-card .profile-details span {
+  font-size: 13px;
+  color: var(--primary-blue-color);
+}
+
+.profile-card .arrow-right {
+  margin-left: auto;
+}
+
+/* setting-options */
+.setting-options-container {
+  margin-inline: 20px;
+  margin-top: 20px;
+  background-color: #1e2230;
+  border-radius: 10px;
+}
+
+.setting-options-container .account-settings .option-heading {
+  background: linear-gradient(#8df3ed, #34d9d1);
+  color: var(--white-color);
+  padding-block: 12px;
+  padding-inline: 30px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.setting-options-container .account-settings .option-heading h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.setting-options-container .account-settings .account-body {
+  padding-top: 8px;
+}
+
+/* single setting option */
+.setting-options-container .setting-option {
+  display: flex;
+  align-items: center;
+  padding-left: 21px;
+  padding-right: 19.65px;
+  padding-block: 10px;
+}
+
+.setting-options-container .setting-option .option-name {
+  color: #eff0f6;
+  margin-left: 14.85px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.setting-options-container .setting-option .arrow-right {
+  margin-left: auto;
+}
+
+.setting-options-container .setting-option .arrow-right.hide {
+  /* margin-left: auto; */
+  visibility: hidden;
+}
+
+.setting-options-container .more-settings {
+  margin-top: 21px;
+  margin-bottom: 30px;
+}
+
+.setting-options-container .more-settings .more-settings-body {
+  padding-block: 8px;
+}
+
+.setting-options-container .more-settings .option-heading {
+  background-color: rgba(32, 141, 254, 0.6);
+  color: var(--white-color);
+  padding-block: 12px;
+  padding-inline: 30px;
+}
+
+.setting-options-container .more-settings .option-heading h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4de0d9;
+}
+
+.setting-options-container .more-settings .arrow-right {
+  display: flex;
+  margin-left: auto;
+}
+
+.setting-options-container .more-settings .arrow-right p {
+  color: #b4c2cd;
+  font-size: 14px;
+  margin-right: 12.5px;
+}
+
+/* making switch out of Checkbox */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1e2230;
+  outline: 1px solid #b4c2cd;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #b4c2cd;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+  outline: 1px solid #5ee5de;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffffff;
+}
+
+input:checked + .slider:before {
+  background-color: #5ee5de;
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 9px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
